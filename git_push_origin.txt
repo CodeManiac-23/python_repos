@@ -1,0 +1,120 @@
+  MINGW64 /d/git_repo2 (main)
+$ gitk -all
+
+  MINGW64 /d/git_repo2 (main)
+$ gitk --all
+
+  MINGW64 /d/git_repo2 (main)
+$ git branch -m master
+
+  MINGW64 /d/git_repo2 (master)
+$ cd C:\Users\sshar\PycharmProjects
+bash: cd: C:UsersssharPycharmProjects: No such file or directory
+
+  MINGW64 /d/git_repo2 (master)
+$ cd C:\\Users\\sshar\\PycharmProjects
+
+  MINGW64 ~/PycharmProjects
+$ git init
+Initialized empty Git repository in C:/Users/sshar/PycharmProjects/.git/
+
+  MINGW64 ~/PycharmProjects (master)
+$ git  add -r pythonProject
+error: unknown switch `r'
+usage: git add [<options>] [--] <pathspec>...
+
+    -n, --dry-run         dry run
+    -v, --verbose         be verbose
+
+    -i, --interactive     interactive picking
+    -p, --patch           select hunks interactively
+    -e, --edit            edit current diff and apply
+    -f, --force           allow adding otherwise ignored files
+    -u, --update          update tracked files
+    --renormalize         renormalize EOL of tracked files (implies -u)
+    -N, --intent-to-add   record only the fact that the path will be added later
+    -A, --all             add changes from all tracked and untracked files
+    --ignore-removal      ignore paths removed in the working tree (same as --no-all)
+    --refresh             don't add, only refresh the index
+    --ignore-errors       just skip files which cannot be added because of errors
+    --ignore-missing      check if - even missing - files are ignored in dry run
+    --sparse              allow updating entries outside of the sparse-checkout cone
+    --chmod (+|-)x        override the executable bit of the listed files
+    --pathspec-from-file <file>
+                          read pathspec from file
+    --pathspec-file-nul   with --pathspec-from-file, pathspec elements are separated with NUL character
+
+
+  MINGW64 ~/PycharmProjects (master)
+$ git add pythonProject
+warning: in the working copy of 'pythonProject/.idea/inspectionProfiles/profiles_settings.xml', LF will be replaced by CRLF the next time Git touches it
+
+  MINGW64 ~/PycharmProjects (master)
+$ ls
+pythonProject/  pythonProject1/
+
+  MINGW64 ~/PycharmProjects (master)
+$ cd pythonProject
+
+  MINGW64 ~/PycharmProjects/pythonProject
+$ git init
+Initialized empty Git repository in C:/Users/sshar/PycharmProjects/pythonProject/.git/
+
+  MINGW64 ~/PycharmProjects/pythonProject (master)
+$ git add *.py
+
+  MINGW64 ~/PycharmProjects/pythonProject (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   HelloWorld.py
+        new file:   OperatorsExamples.py
+        new file:   globalvars.py
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .idea/
+
+
+  MINGW64 ~/PycharmProjects/pythonProject (master)
+$ git commit -m "fundamentals of python with examples"
+[master (root-commit) 9708349] fundamentals of python with examples
+ 3 files changed, 129 insertions(+)
+ create mode 100644 HelloWorld.py
+ create mode 100644 OperatorsExamples.py
+ create mode 100644 globalvars.py
+
+  MINGW64 ~/PycharmProjects/pythonProject (master)
+$ git branch -m main
+
+  MINGW64 ~/PycharmProjects/pythonProject (main)
+$ git remote set-url origin https://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@github.com/CodeManiac-23/python_repos.git
+error: No such remote 'origin'
+
+  MINGW64 ~/PycharmProjects/pythonProject (main)
+$ git remote add origin https://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@github.com/CodeManiac-23/python_repos.git
+
+  MINGW64 ~/PycharmProjects/pythonProject (main)
+$ git remote set-url origin https://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@github.com/CodeManiac-23/python_repos.git
+
+  MINGW64 ~/PycharmProjects/pythonProject (main)
+$ git remote add origin https://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@github.com/CodeManiac-23/python_repos.git
+error: remote origin already exists.
+
+  MINGW64 ~/PycharmProjects/pythonProject (main)
+$ git push -u origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 1.30 KiB | 1.30 MiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/CodeManiac-23/python_repos.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+  MINGW64 ~/PycharmProjects/pythonProject (main)
